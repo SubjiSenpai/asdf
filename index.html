@@ -98,8 +98,9 @@
 <body>
     <h1>Tech Bridge for the Disconnected</h1>
     
-    <!-- Dropdown Menu -->
+    <!-- Combined FAQ and Select an Issue -->
     <div class="container">
+        <h2>Frequently Asked Questions (FAQ)</h2>
         <label for="issues">Select an Issue:</label>
         <select id="issues" class="dropdown" onchange="showAnswer()">
             <option value="">-- Choose an issue --</option>
@@ -110,16 +111,8 @@
             <option value="software">Software Not Responding</option>
         </select>
         <p id="answer"></p>
-    </div>
 
-    <!-- Search Bar -->
-    <div class="container">
-        <input type="text" id="search" placeholder="Search for solutions..." class="dropdown">
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="container">
-        <h2>FAQ</h2>
+        <!-- FAQ Details -->
         <details>
             <summary>How do I fix a slow device?</summary>
             <p>Close unused applications and clear cache to speed up your device.</p>
@@ -127,6 +120,18 @@
         <details>
             <summary>Why does my WiFi keep disconnecting?</summary>
             <p>Forget the network and reconnect, or restart your router.</p>
+        </details>
+        <details>
+            <summary>What should I do if my battery drains quickly?</summary>
+            <p>Reduce screen brightness, close background apps, and disable location services.</p>
+        </details>
+        <details>
+            <summary>How can I fix software that's not responding?</summary>
+            <p>Try updating or reinstalling the software, and restart your device.</p>
+        </details>
+        <details>
+            <summary>What should I do if I have no internet connection?</summary>
+            <p>Try restarting your router or checking with your ISP.</p>
         </details>
     </div>
 
@@ -142,14 +147,6 @@
     <!-- Dark Mode Toggle -->
     <div class="container">
         <button id="themeToggle" class="dropdown">Toggle Dark Mode</button>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="container">
-        <h2>Follow Us</h2>
-        <a href="https://twitter.com" target="_blank">Twitter</a> |
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
     </div>
 
     <!-- Chatbot Container -->
